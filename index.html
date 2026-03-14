@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <link rel="icon" href="Logo/Logo2.png" type="image/png">
- <head>
- <img src="Logo/Logo2.png" width="250" height="250">
- <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CUG</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <style>
-    /* Your original CSS styles go here (if any) */
-    /* Sidebar styles */
     .sidebar {
       font-family: Poppins, Arial, sans-serif;
       position: fixed;
@@ -34,7 +30,7 @@
     }
 
     .sidebar a {
-      color: yellow; /* Yellow color */
+      color: yellow;
       text-decoration: none;
       margin: 10px 0;
       font-size: 20px;
@@ -57,7 +53,7 @@
 
     .centered-heading,
     .centered-heading2 {
-      color: yellow; /* Yellow color */
+      color: yellow;
       text-align: center;
     }
 
@@ -65,12 +61,12 @@
       text-align: center;
       margin-top: 20px;
       font-size: 20px;
-      color: yellow; /* Yellow color */
+      color: yellow;
     }
 
     .button {
-      background-color: yellow; /* Yellow background */
-      color: black; /* Black text color */
+      background-color: yellow;
+      color: black;
       border: none;
       padding: 10px 20px;
       font-size: 16px;
@@ -79,7 +75,7 @@
     }
 
     .button:hover {
-      background-color: #ffea00; /* Lighter yellow on hover */
+      background-color: #ffea00;
     }
   </style>
 </head>
@@ -88,16 +84,12 @@
     <a href="./games/partners.html">Partners</a>
     <a href="./games/discord.html">Discord</a>
     <a href="./games/funding.html">Funders</a>
-    <!-- Add more links as needed -->
   </div>
 
-  <!-- Magnifying Glass Icon -->
   <div class="magnifying-glass" id="magnifyingGlass">☰</div>
 
-  <!-- Main Content -->
   <h1 class="centered-heading">CUG</h1>
   
-  <!-- Display Random Fact or Text -->
   <div id="randomFact"></div>
   
   <h1 class="centered-heading2">The Best Unblocked Games Out There</h1>
@@ -109,7 +101,6 @@
       const sidebar = document.getElementById("sidebar");
       const randomFactContainer = document.getElementById("randomFact");
 
-      // Array of random facts or texts
       const randomFacts = [
         "Did you know that this website was made by Chip Hill? Also The Founder Of Hillflow Brand 😎.",
         "Tiktok has almost been banned 3 times 😭.",
@@ -153,7 +144,6 @@
         randomFactContainer.textContent = fact;
       }
 
-      // Display random fact when the page is loaded
       displayRandomFact();
 
       function toggleSidebar() {
